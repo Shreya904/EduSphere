@@ -1,0 +1,19 @@
+{
+  "name": "tute66",
+  "version": "1.0.0",
+  "description": "This package is build by me",
+  "main": "tute66.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "best"
+  ],
+  "author": "\"Aakash\"",
+  "license": "ISC",
+  "dependencies": {
+    "global": "^4.4.0",
+    "nodemon": "^3.0.1",
+    "slugify": "^1.6.6"
+  }
+}

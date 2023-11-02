@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Registrationform</title>
+    <link rel="stylesheet" href="regisytration.css" >
+    
+  </head>
+  <body>
+    
+    <section class="container">
+      <header>Registration Form</header>
+      <form id="return validation" name="Registration-details" method="POST" id="registrationform" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full Name" name="name" id="name" required >
+        </div>
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Enter Email Adress" name="email" id="email" required >
+        </div>
+        <div class="input-box">
+          <label>Contact Number</label>
+          <input type="number" placeholder="Enter contact number" name="number" id="number" required >
+        </div>
+
+        
+          </div>
+        </div>
+        
+        <button type="submit" class="registerbtn">Register</button>
+        <button type="reset">Refresh</button>
+      
+      </form>
+    </section>
+   
+<script>
+  function validation(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var number = document.getElementById('number').value;
+document.querySelector('#registration-details').reset();
+    
+  }
+</script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwILo0kTyI3_0_NG3-m7l0YTm9Duf7Wfx-sUszAUOIU3_ZQgeatpc9C6wl25gQQsOeILQ/exec'
+      const form = document.forms['Registration-details']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert(
+            "Thanks for connecting me"
+          ))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+  </body>
+</html>

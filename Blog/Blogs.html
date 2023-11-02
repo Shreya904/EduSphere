@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blog2</title>
+  <style>
+    body{
+      background-color: chartreuse;
+      animation-name: bgColorChange;
+		animation-duration: 40s;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+    
+h1{
+  height:50%;
+  width:50%;
+background-color:chartreuse;
+margin-left: 100px;
+margin-top: 50px;
+animation-name: bgColorChange;
+		animation-duration: 40s;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+
+p{
+background-color:chartreuse;
+margin-left: 100px;
+font-size: xx-large;
+animation-name: bgColorChange;
+		animation-duration: 40s;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+.suscribe{
+  border-radius: 20px;
+  background-color: black;
+  color:white;
+  height:35px;
+  width:100px;
+}
+.button{
+  font-size:medium;
+  margin-left: 360px;
+  
+  border-radius: 10px;
+}
+.mail{
+  border-radius: 20px;
+  height:30px;
+  width:200px;
+  margin-left:100px;
+}
+h2{
+  height:50%;
+  width:90%;
+  background-color:chartreuse;
+border-top: 3px solid black;
+margin-left: 70px;
+margin-top: 50px; 
+animation-name: bgColorChange;
+		animation-duration: 40s;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    
+  }
+  
+  .card-container {
+    width: 300px;
+    height: 440px;
+    background-color:chartreuse;
+    border-radius: 8px;
+    border:3px solid rgb(6, 6, 6);
+    margin: auto;
+    box-shadow: 0 2px 20px rgba(0,0,0, 0.1);
+    overflow: hidden;
+    animation-name: bgColorChange;
+		animation-duration: 40s;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+  
+  
+  .card-image img {
+    height: 220px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    background-size: cover;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 16px;
+    min-height: 200px;
+    
+  }
+  
+  .card-badge {
+    text-transform: uppercase;
+    background-color:chartreuse;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 70px;
+    border:3px solid rgb(6, 6, 6); 
+    margin: 0;
+    font-size: 12px;
+    animation-name: bgColorChange;
+		animation-duration: infinite;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+  
+  
+  .card-badge-blue {
+    background-color: #92d4e4;
+  }
+  
+  .card-badge-purple {
+    background-color: #3d1d94;
+  }
+  
+  .card-badge-pink {
+    background-color: #c62bcb;
+  }
+  
+  .card-body h1 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .card-body p {
+    font-size: 14px;
+    margin: 8px 0 16px 0;
+  }
+  
+  .card-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-author p {
+    margin: 0 16px;
+    font-size: 12px;
+  }
+  
+  .card-author p:last-child {
+    color: #888;
+  }
+  
+  .card-author img {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    margin-top: auto;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .card-body {
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 5px;
+}
+h3{
+  height:50%;
+  width:90%;
+  background-color:chartreuse;
+border-top: 3px solid black;
+margin-left: 70px;
+margin-top: 50px; 
+animation-name: bgColorChange;
+		animation-duration: 40s;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+
+.image {
+  border-radius: 70%;
+  margin-left: 1000px;
+}
+.load{
+  border-radius: 20px;
+  background-color: black;
+  color:white;
+  height:35px;
+  width:100px;
+  margin-left: 600px;
+}
+h4{
+  height:50%;
+  width:90%;
+  background-color:chartreuse;
+border-top: 3px solid black;
+margin-left: 70px;
+margin-top: 50px; 
+animation-name: bgColorChange;
+		animation-duration: 40s;
+		animation-iteration-count:infinite;
+	  }
+	  @keyframes bgColorChange {
+		  0% { background-color: rgb(244, 197, 6);}
+		 25% { background-color: orange; }
+		 50% { background-color: rgb(238, 164, 3); }
+		 75% { background-color: rgb(240, 128, 244); }
+		100% { background-color:aqua; }
+	  }
+
+
+    .container-0{
+	max-width: 1270px;
+	margin:auto;
+}
+.row-0{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+	/* padding-top: 40px; */
+}
+li{
+	/* color: white; */
+color:	#bbbbbb;
+}
+li.hover{
+	color: rgb(240, 240, 110)  ;
+}
+.footer{
+	background-color:  rgb(187, 47, 243) ;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 18%;
+   padding: 0 15px;
+}
+.footer-col h5{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 600;
+	position: relative;
+}
+.footer-col h5::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgb(255 199 0) ;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	/* color: #ffffff; */
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	/* color: #ffffff; */
+	padding-left: 8px;
+	color: rgb(240, 240, 110) ;
+
+
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color:  rgb(240, 240, 110);
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+  </style>
+</head>
+<body>
+  <h1>Hey,We're Here.See Our</h><p> Thoughts,and Ideas through<br>Blogs.</p>
+  <input class="mail" type="email" placeholder="type your email"><button class="suscribe" type="submit">suscribe</button><p class="button">Get the email newsletterand unlock access to <br>members-only content and updates.</p>
+<br>
+<h2>get started with our best stories</h2>
+<br>
+<div class="container">
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x800">
+    <span>CSS</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x802">
+    <span>Image</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x804">
+    <span>Hover</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x806">
+    <span>Effect</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x806">
+    <span>card</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x804">
+    <span>text</span>
+  </div>
+</div>
+
+<br>
+<h3>See ,what we've<br><b>written lately.</b><img class="image" src="https://media.licdn.com/dms/image/D5603AQEEC65tSwOboA/profile-displayphoto-shrink_400_400/0/1671330676624?e=1694044800&v=beta&t=rJZX1zLgjBdOSxxI3VyiXDt7ot4b_Im8KN4EAC68qEs" id="Avatar" height="80" width="80"></img></h3> 
+<div class="container">
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x800">
+    <span>CSS</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x802">
+    <span>Image</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x804">
+    <span>Hover</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x806">
+    <span>Effect</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x806">
+    <span>card</span>
+  </div>
+  <div class="box">
+    <img src="https://source.unsplash.com/1000x804">
+    <span>text</span>
+  </div>
+</div>
+  <br>
+  <button class="load" type="submit">Load More</button>
+  <br>
+  <h4>Recomemded</h4>
+  <section class="container">
+    <div class="card-container">
+      <div class="card-image">
+        <img src="https://lucknowtourism.co.in/images/places-to-visit/header/dr-ambedkar-park-lucknow-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="a brand new sports car" />
+      </div>
+      <div class="card-body">
+        <span class="card-badge card-badge-blue">Famous Park</span>
+        <h1>
+          Ambedkar Park,Lucknow
+        </h1>
+        <div class="card-author">
+          <img src="https://image.similarpng.com/very-thumbnail/2021/08/Hand-drawn-bearded-men-hairstyle-on-transparent-background-PNG.png" />
+          <div class="author-info">
+            <p class="author-name">Rajan</p>
+            <p class="post-timestamp"> 1 hr ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-container">
+      <div class="card-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzbeeAY2bb7Y-tgr0ixd8jKW3Y4KOaTmgBON3GvgrvIw7jqPI4_oilq7IzcVSOLqV-J4c&usqp=CAU" >
+      </div>
+      <div class="card-body">
+        <span class="card-badge card-badge-purple">Famous Monument</span>
+        <h1>
+        Bada Imam Bada
+        </h1>
+        <div class="card-author">
+          <img src="https://image.similarpng.com/very-thumbnail/2021/08/Hand-drawn-bearded-men-hairstyle-on-transparent-background-PNG.png" alt="author avatar" />
+          <div class="author-info">
+            <p class="author-name">Amit</p>
+            <p class="post-timestamp">2h ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-container">
+      <div class="card-image">
+        <img src="https://static.zollege.in/public/college_data/images/appImage/1646906457H202009202141465564.jpg?tr=h-250,w-400,c-force">
+      </div>
+      <div class="card-body">
+        <span class="card-badge card-badge-pink">Famous University</span>
+        <h1>
+         University Of Lucknow
+        </h1>
+    
+        <div class="card-author">
+          <img src="https://image.similarpng.com/very-thumbnail/2021/08/Hand-drawn-bearded-men-hairstyle-on-transparent-background-PNG.png">
+          <div class="author-info">
+            <p>Aryan</p>
+            <p>3h ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <!-- Footer  -->
+ <footer class="footer">
+  <div class="container-0">
+    <div class="row-0">
+      <div class="footer-col" style="width: 45%">
+        <img
+          src="https://www.freeiconspng.com/uploads/rainbow-logo-design-transparent-0.png"
+          alt=""
+          height="90px"
+          width="150px"
+          style="border-radius: 60px ;border-color: rgba(0, 0, 0, 0.8);"
+        />
+
+        <ul style="padding-top: 30px">
+          <!-- <li><img src="" alt="">about us</li> -->
+          <li>
+            <img src="https://i.pinimg.com/originals/9b/56/f5/9b56f50e5f4a28da700b0c991d96b5c7.png" height="20" width="30"  style="background-color: rgb(187, 47, 243);" /> &nbsp;Lucknow,226021
+          </li>
+          <li>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/010/829/986/small/phone-icon-in-trendy-flat-style-free-png.png" height="20" width="30" style="background-color: rgb(187, 47, 243) ;" /> &nbsp;+91-1234-567-890
+          </li>
+          <li>
+            <img src="https://img.freepik.com/free-icon/email_318-859700.jpg" height="20" width="30"  style="background-color: rgb(187, 47, 243);" />
+            &nbsp;ariseTech645@gmail.com
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>COMPANY</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Help and Support</h5>
+        <ul>
+          <li><a href="#">User Guidelines</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#"> Terms and conditions</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<svg style="background-color:#0f0ff4;" width="100%" height="60" viewbox="0 0 100 100" preserveAspectRatio="none">
+  <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" />
+  </svg>
+</body>
+</html>

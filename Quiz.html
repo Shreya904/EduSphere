@@ -1,0 +1,372 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Library</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/review_new.css" />
+    <link rel="stylesheet" href="css/Library.css">
+    <link rel="stylesheet" href="css/notes.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poopins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(210, 203, 84);
+}
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    margin-top: 200px;
+    padding: 30px;
+}
+.app h1{
+    font-size: 30px;
+    color: #055d5c;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 22px;
+    color: rgb(29, 3, 178);
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3;
+}
+.btn:hower{
+    background: #222;
+    color: #5b2beb; 
+}
+#next-btn{
+    background: #056d42;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background: #17a90c;
+}
+.incorrect{
+    background: #f50202;
+}
+        </style>
+</head> 
+
+<body> 
+    <section>
+    <nav class="navbar">
+        <div class="main-menu">
+         <img src="https://instagram.fknu1-2.fna.fbcdn.net/v/t51.2885-19/373395537_1015241759722163_7118905280177538452_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fknu1-2.fna.fbcdn.net&_nc_cat=111&_nc_ohc=n-bCQKHWJAAAX-ldhky&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBG3g4_Gdzaj04l01c16Hal7dhfdZxYomrHaYDaO-v7HQ&oe=64FEE890&_nc_sid=8b3546" class="logo"></div>
+          <ul class="Navigation-items">
+            <li>
+              <a href="index.html" id="home">Home</a>
+            </li>
+            <li>
+              <a href="#" id="e-material"
+                >E-Materials <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+              <div class="drop_down_menu">
+                <ul>
+                  <li><a href="notes.html">E-Notes</a></li>
+                  <li><a href="Attendence.html">Attendence Sheet</a></li>
+                  <li><a href="Quiz.html">Quiz</a></li>
+                  <li><a href="#">Tests</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" id="courses"
+                >Courses <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+              <div class="drop_down_menu">
+                <ul>
+                  <li><a href="#">BTECH</a></li>
+                  <li><a href="#">bba</a></li>
+                  <li><a href="#">bsc</a></li>
+                  <li><a href="#">mca</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="Blog/Blogs.html" id="blog">Blog</a></li>
+            <li><a href="Doubt Page/doubt.html" id="doubt">Doubts</a></li>
+            <li>
+              <li><a href="Library.html">Library</a></li>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- For hanburger Menu -->
+        <div class="hamburger_menu">
+          <div class="logo_1"></div>
+          <span class="hamburger">
+            <ion-icon name="menu-outline"></ion-icon
+          ></span>
+        </div>
+        <div class="hidden" id="menu-2">
+          <ul class="Navigation-items" id="secondary_nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#" id="e-material-items"
+                >E-Materials <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+              <div id="drop-down-0">
+                <ul>
+                    <li><a href="notes.html">E-Notes</a></li>
+                  <li><a href="#">Question Bank</a></li>
+                  <li><a href="#">Quiz</a></li>
+                  <li><a href="#">Tests</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" id="courses-content"
+                >Courses <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+              <div class="drop_down_menu" id="drop-down-1">
+                <ul>
+                  <li><a href="#"> Bba</a></li>
+                  <li><a href="#">BTECH</a></li>
+                  <li><a href="#">Bms</a></li>
+                  <li><a href="#">BSC</a></li>
+                </ul>
+              </div>
+            </li>
+  
+            <li><a href="Blog/Blogs.html">Blog</a></li>
+            <li><a href="Doubt Page/doubt.html">Doubts</a></li>
+            <li><a href="Library.html">Library</a></li>
+          </ul>
+        </div>
+   
+        <!-- <div class="searching">
+          <input type="text" placeholder="Search.." class="search-bar" />
+          <button><ion-icon name="search-outline"></ion-icon></button>
+        </div> -->
+        <button class="btn-0" onclick="NewTab()" ><a href="LogIn/register/register.html">Login&nbsp;/&nbsp;Register</a></button>
+      </nav>
+    </section>
+    <div class="app">
+        <h1>Test Your Knowledge</h1>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+            <button id="submit-btn" style="display: none;">Submit</button>
+            <div id="score" style="display: none;">Score: <span id="score-value">0</span></div>
+        </div>
+    </div>
+
+    <br>
+    <section>
+      <footer class="footer">
+        <div class="container-0">
+          <div class="row-0">
+            <div class="footer-col" style="width: 45%">
+              <img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjXBqunHy4VIDWja-AUTMKIZ5vXbBU73hmfPReax7apPPhQktnxDRDZgQTvF6MVhrlhTY81UnwU8rBPV8Nr6vdiH4KFSdp8knwqSrIlHYCIJuDbM01g93WfIkinOBpgUl9pVLEJ5sbD2wL5yL48cHy-WZpelPv63oMWa6PcCdiGX7OWUg_1msqZZIHXbxwxJm5-XphrY6qGhWM9rAKsYuXjbtRbeRm9es6ZmHQ_LKw-DPsQXv0-udc2bjis_Ua2Q6O6oEoZBVjm3LQR7CQ0AY-yOrUJAoncBsaQ3f603vDZOMJoWeTYeZMvxHqos3hW2KYt9ZC6IRv3DxN2PHeX1S5VlSZPrQRtHZydIPHUg_3_FyOJ8UvI00vN6IGUeCd3njVJH9yfOofeCxAJ35aSq2daunKnGHfDp2XKaOg2civHQAUfehwHSL4HN59zD2daUh6ScSycRm1p1-ntVtMMolPUQxFLUmWQa1GYL5JZKNaSEEatHEMiwbBNiOUAGDmAAeX9VIKCt52wZhY2ZHGjiY1mkJJsXlzSXrjEOeY7zHRVzjYPiZuRcpMEP-sLMZoEoAwoewEDpbBZ68HLd0CEtPYCFFB7imWuDWjnJy9XmOUbX1XG_GwD9W3337sExtZfvHSnla7TCeJLifVo1iCmuEXUO4efj0vZXdJMNA4e4BzJQu1qoU78FsqZT9zChis1Q47KbeYR1Zw2IIqcJBX31OluITdxAaRcdCTe9zsQPZ8aymMDcbbmHQfdWP4YFLTLXADS04KePaQyMb0fWx09AEep3LITpIrZGNswvNBZ64Lgjo9OXHpXkH7MtJtu4oVlfVmZPLCTaSVq3JV2NwjOE_HlQX4ojn5a0RpeeyXHbsx8Dl8iAtgyfWWna1GANL9JAic3G1Qrgvyjvh_K5choBvc2F2g8hBd_wJrJWyJ7DwbRmi5vnwIj58NXqRgFu675knzU=s192-c-rg-br100"
+                alt=""
+                height="20px"
+                width="20px"
+                style="height: 150px;width: 150px;border-radius: 50%;"
+                
+              />
+  
+              <ul style="padding-top: 30px">
+                <!-- <li><img src="" alt="">about us</li> -->
+                <li>
+                   &nbsp;Lucknow,226021
+                </li>
+                <li>
+                &nbsp;+91-1234-567-890
+                </li>
+                <li>
+                  &nbsp;
+                  &nbsp;eduSphere@gmail.com
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>COMPANY</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Help and Support</h4>
+              <ul>
+                <li><a href="#">User Guidelines</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#"> Terms and conditions</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        const questions = [
+    {
+        question: "What is the purpose of an operating system?",
+        answers: [
+            { text: "To manage hardware resources and provide an interface for user applications", correct: true },
+            { text: "To design computer programs", correct: false },
+            { text: "To connect multiple computers in a network", correct: false },
+            { text: "To write assembly language code", correct: false },
+        ]
+    },
+    {
+        question: "Which of the following is an example of a high-level programming language?",
+        answers: [
+            { text: "Machine code", correct: false },
+            { text: "Assembly language", correct: false },
+            { text: "C++", correct: true },
+            { text: "Binary", correct: false },
+        ]
+    },
+    {
+        question: "What does the acronym 'LAN' stand for in networking?",
+        answers: [
+            { text: "Long Area Network", correct: false },
+            { text: "Local Area Network", correct: true },
+            { text: "Linked Access Network", correct: false },
+            { text: "Limited Area Network", correct: false },
+        ]
+    },
+    {
+        question: "What is the function of a GPU (Graphics Processing Unit)?",
+        answers: [
+            { text: "To process mathematical calculations", correct: false },
+            { text: "To manage file storage", correct: false },
+            { text: "To handle graphical and visual computations", correct: true },
+            { text: "To connect to the internet", correct: false },
+        ]
+    },
+    {
+        question: "Which type of memory is non-volatile and used for long-term storage?",
+        answers: [
+            { text: "RAM", correct: false },
+            { text: "Cache", correct: false },
+            { text: "ROM", correct: true },
+            { text: "Virtual ", correct: false },
+        ]
+    },
+
+];
+
+const questionElement = document.getElementById("question");
+const answerButtons = document.getElementById("answer-buttons");
+const nextButton = document.getElementById("next-btn");
+const submitButton = document.getElementById("submit-btn");
+
+let currentQuestionIndex = 0;
+
+function startQuiz() {
+    showQuestion();
+}
+
+function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionElement.innerText = currentQuestion.question;
+
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        button.addEventListener("click", () => {
+            if (answer.correct) {
+                button.classList.add("correct");
+            } else {
+                button.classList.add("incorrect");
+            }
+            nextButton.style.display = "block";
+        });
+    });
+}
+
+
+    if (currentQuestionIndex === questions.length - 1) {
+        submitButton.style.display = "block";
+        nextButton.style.display = "none";
+        submitButton.addEventListener("click", submitQuiz);
+    }
+
+
+function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        submitQuiz();
+    }
+}
+
+function submitQuiz() {
+
+    alert("Quiz completed! Thank you for participating.");
+}
+
+nextButton.addEventListener("click", nextQuestion);
+
+
+
+
+startQuiz();
+        </script>
+    </body>
+    </html>
